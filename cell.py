@@ -15,10 +15,10 @@ class Cell:
         self.has_bottom_wall = has_bottom_wall
 
     def draw(self):
-        top_left = Point(self._x1, self._y1)
-        top_right = Point(self._x2, self._y1)
-        bottom_right = Point(self._x2, self._y2)
-        bottom_left = Point(self._x1, self._y2)
+        top_left = Point(self._x1, self._y2)
+        top_right = Point(self._x2, self._y2)
+        bottom_right = Point(self._x2, self._y1)
+        bottom_left = Point(self._x1, self._y1)
 
         if self.has_left_wall is True:
             left = Line(top_left, bottom_left)
