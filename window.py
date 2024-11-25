@@ -8,6 +8,7 @@ class Window:
         self.height = height
         self.__root = Tk()
         self.__root.title("Maze Solver")
+        self.__root.geometry(f"{width}x{height}")
         self.canvas = Canvas(self.__root)
         # widgets will only appear if they have had their geometry
         # specified with a geometry manager
